@@ -27,10 +27,6 @@ h3 code {
 /* Tweak navbar brand link to be super sleek
 -------------------------------------------------- */
 
-body > .navbar {
-  font-size: 13px;
-}
-
 /* Change the docs' brand */
 body > .navbar .brand {
   padding-right: 0;
@@ -46,7 +42,12 @@ body > .navbar .brand {
 }
 body > .navbar .brand:hover {
   text-decoration: none;
-  text-shadow: 0 1px 0 rgba(255,255,255,.1), 0 0 30px rgba(255,255,255,.4);
+  color: #FCE51C;
+  background: #8ead13;
+  border-radius: 23px 0px;
+}
+.navbar li a:hover{
+  background: red;
 }
 
 
@@ -1090,9 +1091,14 @@ form.bs-docs-example {
 }
 .ads{
   padding:5px;
+  background: #C1CF49;
+  text-align: center; 
+  border-radius: 10px 0px 0px 10px;
 }
 .ads_info{
-  padding-bottom: 1.5px;
+  width: 140px;
+  height: 140px;
+  padding-bottom: 3px;
 }
 .jumbotron{
   position: relative; 
@@ -1107,9 +1113,16 @@ form.bs-docs-example {
   background: #333;
 }
 .wrap{
-  border-radius: 0px 10px 10px 10px;
-  box-shadow: 1px 20px 29px #BBCC4B;
+  border-radius: 0px 0px 10px 10px;
+  box-shadow: 1px 1px 30px 10px #BBCC4B;
 }
 .main_content{
   padding-left:10px;
+}
+header h2{
+  float: right;
+}
+.dynamo{
+  color: red;
+  font-weight: bold;
 }
