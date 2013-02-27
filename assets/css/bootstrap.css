@@ -3595,6 +3595,7 @@ input[type="submit"].btn.btn-mini {
   margin-top: 10px;
   margin-bottom: 10px;
   font-size: 0;
+  float: right;
 }
 
 .btn-toolbar > .btn + .btn,

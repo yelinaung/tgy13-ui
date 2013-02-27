@@ -1,8 +1,140 @@
+<!DOCTYPE html>
 <html>
-<head>
-	<title>hhh</title>
-</head>
-<body>
+  <head>
+    <title>TGY13</title>
+    <!-- Bootstrap -->
+    <link href="assets/css/bootstrap.css" rel="stylesheet" media="screen">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="assets/css/bootstrap-responsive.css" rel="stylesheet">
+    <link href="assets/css/style.css" rel="stylesheet">
+    <link href="assets/css/demo.css" rel="stylesheet">
+    <link href="assets/css/jcontent.css" rel="stylesheet">
+    <script src="assets/js/jquery.js"></script>
+    <script src="assets/js/jquery.jcontent.0.8.min.js"></script>
+    <script src="assets/js/jquery.jcontent.0.8.js"></script>
+    <script src="assets/js/jquery.easing.min.1.3.js"></script>
+    <script src="assets/js/bootstrap.min.js"></script>
+    <script src="assets/js/dynamo.js"></script>
+    <script type="text/javascript" language="javascript">
+    $("document").ready(function(){
+       
+        $("div#demo").jContent({orientation: 'vertical', 
+                        easing: 'easeOutCirc', 
+                        duration: 500,
+                        auto: true,
+                        direction: 'next', //or 'prev'
+                        pause: 1500,
+                        pause_on_hover: true}); 
+</script>
+    <!-- Navbar -->
+  </head>
+  <body  class="preview" id="top" data-spy="scroll" data-target=".subnav" data-offset="80">
+    <div class="navbar navbar-fixed-top">
+      <div class="navbar-inner">
+                <div class="container">
+                  <a class="btn btn-navbar" data-toggle="collapse" data-target=".navbar-responsive-collapse">
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                  </a>
+                  <div class="nav-collapse collapse navbar-responsive-collapse">
+                  <a class="brand" href="#">TGY13</a>
+                    <ul class="nav">
+                      <li class="active"><a href="index.html">Home</a></li>
+                      <li><a href="#">Stage</a></li>
+                      <li><a href="#">Car Rental</a></li>
+                      <li><a href="#">About Us</a></li>
+                    </ul>
+                    <ul class="nav pull-right">
+                    <form class="form-search navbar-search pull-left">
+                      <div class="input-prepend">
+                        <a class="btn" href="#"><i class="icon-search"></i></a>
+                        <input type="text" class="span2 search-query" placeholder="Type your search">
+                      </div>
+                    </form>
+                      <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">Post <b class="caret"></b></a>
+                        <ul class="dropdown-menu">
+                          <li><a href="#">Stage</a></li>
+                          <li><a href="#">Car</a></li>
+                        </ul>
+                      </li>
+                      <li class="divider-vertical"></li>
+                      <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">Sign <span class="dynamo" data-lines="in">up</span>?<b class="caret"></b></a>
+                        <ul class="dropdown-menu">
+                          <form class="form-inline" style="padding:9px;">
+                            <div class="input-prepend">
+                              <span class="add-on"><i class="icon-envelope"></i></span>
+                              <input type="text" class="input-small span2" id="inputIcon" placeholder="Email">
+                            </div>
+                            <div class="input-prepend">
+                              <span class="add-on"><i class="icon-lock"></i></span>
+                              <input type="password" id="inputIcon" class="input-small span2" placeholder="Password">
+                            </div>
+                            <label class="checkbox">
+                              <input type="checkbox"> Remember me
+                            </label><br/>
+                            <button type="submit" class="btn">Sign in</button>
+                            <a href="#">New user?</a>
+                          </form>
+                        </ul>
+                      </li>
+                    </ul>
+                  </div><!-- /.nav-collapse -->
+                </div>
+              </div><!-- /navbar-inner -->
+    </div>
 
-</body>
+    <!-- header -->
+    <header class="jumbotron subhead" id="overview">
+      <div class="container">
+        <a class="brand" href="./index.html"><img src="assets/img/logo1.png" width="210px" height="210px"></a>
+      </div>
+    </header>
+    <div class="row-fluid">
+      <div class="span2"></div>
+      <div class="span8 wrap">
+        <div class="row-fluid">
+          <div class="span4 attr1">
+            <img src="assets/img/logo3.png">
+          </div>
+          <div class="span8">
+            <div class="detail">
+              <span class="attr1">Name :</span>
+              <span class="attr2">Lorem ipsum dolor sit amet</span>
+            </div>
+            <div class="detail">
+              <span class="attr1">Location :</span>
+              <span class="attr2">Lorem ipsum dolor sit amet</span>
+            </div>
+            <div class="detail">
+              <span class="attr1">Phone :</span>
+              <span class="attr2">Lorem ipsum dolor sit amet</span>
+            </div>
+            <div class="detail">
+              <span class="attr1">Info :</span>
+              <span class="attr2">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+              tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+              quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+              consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+              cillum dolore eu fugiat nulla pariatur.</span>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="span2"></div>
+    </div>
+    <footer class="navbar-fixed-bottom navbar-inner">
+      <div class="container">
+      <p>Example courtesy</p>
+    </div>
+    </footer>
+
+  </body>
+  <script type="text/javascript">
+$(function() {
+  $('.dynamo').dynamo();
+});
+</script>
 </html>
