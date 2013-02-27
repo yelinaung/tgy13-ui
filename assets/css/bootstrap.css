@@ -2878,6 +2878,7 @@ table th[class*="span"],
 
 .dropdown-menu {
   position: absolute;
+  text-align: center;
   top: 100%;
   left: 0;
   z-index: 1000;
