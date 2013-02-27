@@ -46,9 +46,6 @@ body > .navbar .brand:hover {
   background: #8ead13;
   border-radius: 23px 0px;
 }
-.navbar li a:hover{
-  background: red;
-}
 
 
 /* Sections
@@ -1149,9 +1146,6 @@ header h2{
 .dropdown-menu a:hover{
   color:white;
 }
-table thead tr#success {
-  background-color: #8FC1B8;
-}
 
 
 table.table thead .sorting,
@@ -1170,14 +1164,6 @@ table.table thead .sorting_desc { background: url('images/sort_desc.png') no-rep
 table.table thead .sorting_asc_disabled { background: url('images/sort_asc_disabled.png') no-repeat center right; }
 table.table thead .sorting_desc_disabled { background: url('images/sort_desc_disabled.png') no-repeat center right; }
 
-.scroll_bar {
-overflow: -moz-scrollbars-vertical; 
-overflow-y: scroll;
-height: 700px;
-width: 100%;
-display: table;
-}
-
 .search_row {
   margin: 10px;
 
@@ -1185,4 +1171,54 @@ display: table;
 
 .select-box {
   width: 75px;
+}
+html>body tbody.scrollContent{
+  display: inline-block;
+  height: 400px;
+  overflow: auto;
+  width: 100%
+}
+thead.fixedHeader tr {
+  position: relative
+}
+
+/* set THEAD element to have block level attributes. All other non-IE browsers            */
+/* this enables overflow to work on TBODY element. All other non-IE, non-Mozilla browsers */
+html>body thead.fixedHeader tr {
+  display: block
+}
+
+/* make the TH elements pretty */
+thead.fixedHeader th {
+  background: #000;
+  color: #fff;
+  border-left: 1px solid #EB8;
+  border-right: 1px solid #B74;
+  border-top: 1px solid #EB8;
+  font-weight: normal;
+  padding: 4px 3px;
+  text-align: left
+}
+html>body thead.fixedHeader th {
+  width: 22.9%;
+}
+
+html>body thead.fixedHeader th + th {
+  width: 64.34%;
+}
+
+html>body thead.fixedHeader th + th + th {
+  width: 100%;
+}
+
+html>body tbody.scrollContent td {
+  width: 22.9%;
+}
+
+html>body tbody.scrollContent td + td {
+  width: 64.34%;
+}
+
+html>body tbody.scrollContent td + td + td {
+  width: 100%;
 }
