@@ -45,6 +45,16 @@ hr {
   clear: both;
 }
 
+
+
+/* Sidebar
+-------------------------------------------------- */
+.aboutus {
+  color: #d4d4d4;
+}
+
+
+
 /* Tweak navbar brand link to be super sleek
 -------------------------------------------------- */
 
@@ -1172,11 +1182,20 @@ header h2{
 .slides{
   height: 500px;
   width: 20px;
+
+
 }
+
+.slides p {
+  background-color: #eeeeee;
+  padding: 5px;
+}
+
 .copyright{
   float: left;
   margin-top: 10px;
 }
+
 .login{
   width: 30%;
   float: left;
