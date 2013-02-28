@@ -50,7 +50,16 @@ hr {
 /* Sidebar
 -------------------------------------------------- */
 .aboutus {
-  color: #d4d4d4;
+  color: #000;
+  width: 210px;
+}
+
+.live {
+  background-color: #eee;
+  width: 200px;
+  height: 300px;
+  margin-left: 5px;
+  padding:5px;
 }
 
 
@@ -96,7 +105,12 @@ section > ul li {
 
 /* Separators (hr) */
 .bs-docs-separator {
-  margin: 40px 0 39px;
+/*  margin: 40px 0 39px;*/
+  
+}
+
+hr {
+  margin-top: 40px;
 }
 
 /* Faded out hr */
@@ -195,7 +209,6 @@ hr.soften {
   right: 0;
   bottom: 0;
   left: 0;
-  background: url(../img/bs-docs-masthead-pattern.png) repeat center center;
   opacity: .4;
 }
 @media
@@ -329,21 +342,23 @@ only screen and (     -o-min-device-pixel-ratio: 2/1) {
 
 #footer a {
   text-decoration: none;
-  color: white;
+  color: #000;
 }
 
 #social {
+  padding: 15px;
   float: left;
 }
 
-#footer a:hover {
+#credits a {
   text-decoration: none;
-  color: white;
+  color: #000;
 }
 
-
-
-
+#credits a:hover {
+  text-decoration: none;
+  color: #000;
+}
 
 /* Special grid styles
 -------------------------------------------------- */
@@ -1091,16 +1106,7 @@ form.bs-docs-example {
   position: relative;
   float: left;
   clear:both;
-  -webkit-transition: all 0.3s ease-in;
-  -moz-transition: all 0.3s ease-in;
-  -o-transition: all 0.3s ease-in;
   background:#eeeeee;
-  -webkit-border-radius: 10px;
-  -moz-border-radius: 10px;
-  -o-border-radius: 10px;
-  -ms-border-radius: 10px;
-  -khtml-border-radius: 10px;
-  border-radius: 10px;
   padding: 5px;
   margin-bottom: 5px;
 }
@@ -1138,10 +1144,10 @@ form.bs-docs-example {
   padding: 5px;
 }
 .ads{
-  padding-left: 30px;
+  padding-left: 5px;
 }
 .ads_info{
-  width: 200px;
+  width: 250px;
   height: 200px;
   margin-bottom: 3px;
 }
@@ -1179,11 +1185,10 @@ header h2{
   padding-left: 10px;
   text-align: left;
 }
+
 .slides{
-  height: 500px;
+  height: 100%;
   width: 20px;
-
-
 }
 
 .slides p {
