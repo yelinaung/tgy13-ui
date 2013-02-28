@@ -3,12 +3,12 @@
   <head>
     <title>TGY13</title>
     <!-- Bootstrap -->
-    <link href="assets/css/bootstrap.css" rel="stylesheet" media="screen">
+    <link href="assets/css/bootstrap2.css" rel="stylesheet" media="screen">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="assets/css/bootstrap-responsive.css" rel="stylesheet">
     <link href="assets/css/style.css" rel="stylesheet">
     <link href="assets/css/jcontent.css" rel="stylesheet" media="screen">
-
+<!-- <link href='http://fonts.googleapis.com/css?family=Oxygen:700' rel='stylesheet' type='text/css'>
+ -->
     <script src="assets/js/jquery.js"></script>
     <script src="assets/js/bootstrap.min.js"></script>
     <script src="assets/js/dynamo.js"></script>
@@ -27,22 +27,6 @@
                                          pause: 2000});
          
             });
-            function pop_up(hyperlink, window_name)
-            {
-              if (! window.focus)
-                return true;
-              var href;
-              if (typeof(hyperlink) == 'string')
-                href=hyperlink;
-              else
-                href=hyperlink.href;
-              window.open(
-                href,
-                window_name,
-                'width=400,height=300,toolbar=no, scrollbars=yes'
-              );
-              return false;
-            }
     </script>
     <!-- Navbar -->
   </head>
@@ -56,7 +40,7 @@
                     <span class="icon-bar"></span>
                   </a>
                   <div class="nav-collapse collapse navbar-responsive-collapse">
-                  <a class="brand" href="#">TGY13</a>
+
                     <ul class="nav">
                       <li class="active"><a href="index.html">Home</a></li>
                       <li><a href="list_stage.html">Stage</a></li>
@@ -71,19 +55,17 @@
                       </div>
                     </form>
                       <li class="dropdown">
-                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">Post <b class="caret"></b></a>
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" class="btn-group">Post <b class="caret"></b></a>
                         <ul class="dropdown-menu">
                           <li><a href="#">Stage</a></li>
                           <li><a href="#">Car</a></li>
                         </ul>
                       </li>
                       <li class="divider-vertical"></li>
-                      <li class="dropdown">
-                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">Log in</a>
+                        <a href="#" id="login" class="btn btn-primary" data-toggle="dropdown">Log in</a>
                         <ul class="dropdown-menu">
                           <a ref="pop_up.html" onclick="return pop_up(this, 'Pop Up')"><img src="assets/img/login_fb.png" width="80px"></a>
                         </ul>
-                      </li>
                     </ul>
                   </div><!-- /.nav-collapse -->
                 </div>
@@ -92,9 +74,7 @@
 
     <!-- header -->
     <header class="jumbotron subhead" id="overview">
-      <div class="container">
-        <a class="brand" href="./index.html"><img src="assets/img/logo3.png" width="440px"></a>
-      </div>
+        <div id="logo" > TGY 13 </div>
     </header>
     <div class="row-fluid">
       <div class="span2"></div>
@@ -103,8 +83,7 @@
           <div class="span9">
             <div class="row-fluid">
               <div class="span6">
-                <h2>Stages</h2>
-
+                <h2 >Stages</h2>
                 <div class="update_items">
                   <div class="update_one">
                     <img src="assets/img/padauk.gif">
