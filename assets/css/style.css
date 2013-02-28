@@ -37,6 +37,14 @@ h3 code {
   text-decoration: none;
 }
 
+hr {
+  background-color: #d4d4d4;
+  color: #d4d4d4;
+  height: 1px;
+  border: 0px;
+  clear: both;
+}
+
 /* Tweak navbar brand link to be super sleek
 -------------------------------------------------- */
 
@@ -304,12 +312,26 @@ only screen and (     -o-min-device-pixel-ratio: 2/1) {
 /* Footer
 -------------------------------------------------- */
 
-#footer {
- margin-right: -20px;
- margin-left: -20px;
- padding-right: 20px;
- padding-left: 20px;
- }
+#footer{
+  position: fixed;
+  width: 100%;
+}
+
+#footer a {
+  text-decoration: none;
+  color: white;
+}
+
+#social {
+  float: left;
+}
+
+#footer a:hover {
+  text-decoration: none;
+  color: white;
+}
+
+
 
 
 
@@ -1062,7 +1084,7 @@ form.bs-docs-example {
   -webkit-transition: all 0.3s ease-in;
   -moz-transition: all 0.3s ease-in;
   -o-transition: all 0.3s ease-in;
-  background:#f7f7f9;
+  background:#eeeeee;
   -webkit-border-radius: 10px;
   -moz-border-radius: 10px;
   -o-border-radius: 10px;
@@ -1070,6 +1092,7 @@ form.bs-docs-example {
   -khtml-border-radius: 10px;
   border-radius: 10px;
   padding: 5px;
+  margin-bottom: 5px;
 }
 .update_items:hover{
 
@@ -1078,11 +1101,15 @@ form.bs-docs-example {
   width:30%;
   float:left;
   vertical-align: middle;
+  padding: 2px;
+  margin-top: 2px;
 }
+
 .update_two{
   width: 60%;
   float:right;
   padding: 10px;
+
 }
 .car{
   border:1px double #ccc;
