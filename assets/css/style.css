@@ -1287,3 +1287,6 @@ html>body tbody.scrollContent td + td {
 html>body tbody.scrollContent td + td + td {
   width: 100%;
 }
+#social a img:hover{
+  box-shadow: 1px 5px 5px #777;
+}
