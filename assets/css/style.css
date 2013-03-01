@@ -23,8 +23,8 @@ h3 code {
 }
 
 #logo {
-  padding-top: 5%;
-  margin-left: 17%;
+  padding-top: 9%;
+  float: left;
   font-size: 100px;
   font-family: 'Oxygen', sans-serif;
 }
@@ -47,7 +47,8 @@ hr {
 
 #bannerads{
   float: right;
-  margin: -15px;
+  padding: 10px 0px;
+  margin-top: 7%;
 }
 
 /* Sidebar
