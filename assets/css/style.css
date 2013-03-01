@@ -46,8 +46,6 @@ hr {
 }
 
 #bannerads{
-  float: right;
-  padding: 10px 0px;
   margin-top: 7%;
 }
 
@@ -356,12 +354,12 @@ only screen and (     -o-min-device-pixel-ratio: 2/1) {
 
 #credits a {
   text-decoration: none;
-  color: #000;
+  color: #555;
 }
 
 #credits a:hover {
   text-decoration: none;
-  color: #000;
+  color: #555;
 }
 
 /* Special grid styles
@@ -1148,11 +1146,10 @@ form.bs-docs-example {
   padding: 5px;
 }
 .ads{
+  padding:0px 20px;
 }
-.ads_info{
-  width: 250px;
-  height: 200px;
-  margin-bottom: 3px;
+.ads_item,.live,.aboutus{
+  margin-bottom: 10px;
 }
 .jumbotron{
   position: relative; 
@@ -1162,8 +1159,9 @@ form.bs-docs-example {
   height: 60px;
 }
 .wrap{
-
-  padding: 10px 0px 15px 12px;
+  padding: 0px 10px;
+  border-left: 2px solid #77AD64;
+  border-right: 2px solid #77AD64;
 }
 header h2{
   float: right;
@@ -1289,7 +1287,9 @@ html>body tbody.scrollContent td + td + td {
   width: 100%;
 }
 #social a img:hover{
-  box-shadow: 1px 5px 5px #777;
+   -webkit-filter: drop-shadow(5px 5px 5px #ccc);
+   -moz-filter: drop-shadow(5px 5px 5px #ccc);
+   filter: drop-shadow(5px 5px 5px #ccc);
 }
 .facebook{
   font-size: 1.3em;

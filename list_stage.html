@@ -1,49 +1,19 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>TGY13 | Stage</title>
+    <title>TGY13 | Stages </title>
     <!-- Bootstrap -->
-    <link href="assets/css/bootstrap.css" rel="stylesheet" media="screen">
+    <link href="assets/css/bootstrap2.css" rel="stylesheet" media="screen">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="assets/css/bootstrap-responsive.css" rel="stylesheet">
     <link href="assets/css/style.css" rel="stylesheet">
+    <link href="assets/css/bootstrap-responsive.css" rel="stylesheet">
     <link href="assets/css/jcontent.css" rel="stylesheet" media="screen">
-
+    <!-- <link href='http://fonts.googleapis.com/css?family=Oxygen:700' rel='stylesheet' type='text/css'> -->
+    <script src="assets/js/holder.js"></script>
     <script src="assets/js/jquery.js"></script>
     <script src="assets/js/bootstrap.min.js"></script>
     <script src="assets/js/dynamo.js"></script>
-    <script type="text/javascript" language="javascript" src="assets/js/jquery-1.5.2.min.js"></script>
-    <script type="text/javascript" language="javascript" src="assets/js/jquery.easing.min.1.3.js"></script>
     <script type="text/javascript" language="javascript" src="assets/js/jquery.jcontent.0.8.min.js"></script>
-    <script type="text/javascript" language="javascript">
-            $("document").ready(function(){
-                //demo6 
-                $("div#demo6").jContent({orientation: 'vertical', 
-                                         easing: "easeOutCirc", 
-                                         duration: 2000,
-                                         auto: true,
-                                         pause_on_hover: true,
-                                         direction: 'prev',
-                                         pause: 2000});
-         
-            });
-            function pop_up(hyperlink, window_name)
-            {
-              if (! window.focus)
-                return true;
-              var href;
-              if (typeof(hyperlink) == 'string')
-                href=hyperlink;
-              else
-                href=hyperlink.href;
-              window.open(
-                href,
-                window_name,
-                'width=400,height=300,toolbar=no, scrollbars=yes'
-              );
-              return false;
-            }
-    </script>
     <!-- Navbar -->
   </head>
   <body  class="preview" id="top" data-spy="scroll" data-target=".subnav" data-offset="80">
@@ -56,12 +26,10 @@
                     <span class="icon-bar"></span>
                   </a>
                   <div class="nav-collapse collapse navbar-responsive-collapse">
-                  <a class="brand" href="#">TGY13</a>
-                    <ul class="nav">
+                  <ul class="nav">
                       <li><a href="index.html">Home</a></li>
                       <li class="active"><a href="list_stage.html">Stage</a></li>
                       <li><a href="list_car.html">Car Rental</a></li>
-                      <li><a href="about.html">About Us</a></li>
                     </ul>
                     <ul class="nav pull-right">
                     <form class="form-search navbar-search pull-left">
@@ -81,7 +49,7 @@
                       <li class="dropdown">
                         <a href="#" class="dropdown-toggle" data-toggle="dropdown">Log in</a>
                         <ul class="dropdown-menu">
-                          <a ref="pop_up.html" onclick="return pop_up(this, 'Pop Up')"><img src="assets/img/login_fb.png" width="80px"></a>
+                          <li><a href="" ref="pop_up.html" onclick="return pop_up(this, 'Pop Up')" class="facebook">facebook</a></li>
                         </ul>
                       </li>
                     </ul>
@@ -91,23 +59,28 @@
     </div>
 
     <!-- header -->
-    <header class="jumbotron subhead" id="overview">
+    <header class="jumbotron subhead">
       <div class="container">
-        <a class="brand" href="./index.html"><img src="assets/img/logo3.png" width="440px"></a>
+        <div class="row-fluid">
+          <div id="logo" class="span7"> TGY 13 </div>
+          <div id="bannerads" class="span5"><img data-src="holder.js/440x100/industrial"></div>
+        </div>
       </div>
-    </header>
+    </header><!-- Header end -->
+    
+    <!-- main_layout start -->
     <div class="row-fluid">
       <div class="span2"></div>
       <div class="span8 wrap">
-        <ul class="breadcrumb">
-          <li><a href="#">Home</a> <span class="divider">/</span></li>
-          <li class="active">Stage</li>
-        </ul>
         <div class="row-fluid">
           <div class="span9">
-            
+
+            <!-- 2 view start -->
+            <div class="row-fluid">
+              <!-- List start -->
+              <div class="span12">
             <div class="row-fluid search_row">
-              <div class="span11">
+              <div class="span8">
                 <div class="span5 pull-left">
                <label>
                   <select class="select-box">
@@ -122,7 +95,7 @@
                 </label>
               </div> <!-- end of select -->
 
-              <div class="span5 pull-right">
+              <div class=" pull-right">
                 <form class="form-search navbar-search pull-right">
                   <div class="input-prepend">
                     <a class="btn" href="#"><i class="icon-search"></i></a>
@@ -133,13 +106,10 @@
               </div>
 
             </div> <!-- end of search row -->
-
-            <div class="row-fluid ">
-
-                <div class="span12">
+              <div>
+                <div class="">
                   <table cellpadding="0" cellspacing="0" border="0" class="table table-striped table-bordered" id="example">
-
-                  <thead class="fixedHeader">
+                  <thead >
                     <tr id="success">
                       <th>Name</th>
                       <th>Location</th>
@@ -147,7 +117,7 @@
                     </tr>
                   </thead>
 
-                  <tbody class="scrollContent">
+                  <tbody >
                     <tr>
                       <td>Lorem ipsum dolor sit amet</td>
                       <td>consectetur adipisicing elit, sed do eiusmod
@@ -255,13 +225,12 @@
                       <td>consectetur adipisicing elit, sed do eiusmod
                     tempor incididunt ut labore et dolore </td>
                       <td>123456789</td>
-                    </tr>
-                                      
+                    </tr>           
                   </tbody>                  
                 </table>
                 </div>
-            </div> <!-- end of table row -->
-            <div class="row-fluid">
+            </div> <!-- end of taable row -->
+            <div class="row-fluid span8">
 
               <div class="pagination pull-right">  
                 <ul>  
@@ -280,58 +249,108 @@
       
             </div> <!-- end of pagination row -->
           </div> <!-- end of span9 -->
+          <!-- List End -->
+        </div><!-- 2 views End -->
 
-          <div class="span3 ads">
-            <div id="demo6">    
-            <div class="slides">
-                <div>
-                      <img src="assets/img/1.jpg" border="0" alt="1" title="1" width="190" class="ads_info"/>
-                      <img src="assets/img/2.jpg" border="0" alt="2" title="2" width="190" class="ads_info"/>
-                      <img src="assets/img/3.gif" border="0" alt="3" title="3" width="190" class="ads_info"/>                    
+            <!-- span12-1 start -->
+            <div class="row-fluid">
+              <div class="span12">
+                <div class="update_items">
+                  <div class="update_one">
+                    <img src="assets/img/tgy.jpg" class="img-rounded">
+                  </div>
+                  <div class="update_two">
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                    tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+
+                  </div>
                 </div>
-                <div>
-                      <img src="assets/img/2.jpg" border="0" alt="2" title="2" width="190" class="ads_info"/>
-                      <img src="assets/img/3.gif" border="0" alt="3" title="3" width="190" class="ads_info"/>
-                      <img src="assets/img/1.jpg" border="0" alt="1" title="1" width="190" class="ads_info"/>
+              </div>
+            </div><!-- span12-1 End -->
+
+            <!-- span12-2 start -->
+            <div class="row-fluid">
+              <div class="span12">
+                <div class="update_items">
+                  <div class="update_one">
+                    <img src="assets/img/tgy.jpg" class="img-rounded">
+                  </div>
+                  <div class="update_two">
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                    tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+
+                  </div>
                 </div>
-                <div>
-                      <img src="assets/img/3.gif" border="0" alt="3" title="3" width="190" class="ads_info"/>
-                      <img src="assets/img/1.jpg" border="0" alt="1" title="1" width="190" class="ads_info"/>
-                      <img src="assets/img/2.jpg" border="0" alt="2" title="2" width="190" class="ads_info"/>
-                    
-                </div>
-            </div>    
-        </div>         
+              </div>
+            </div><!-- span12-2 end -->
+
+            <div class="row-fluid">
+              <div class="span12">
+                <img data-src="holder.js/800x150/industrial">
+              </div>
+            </div>
+
           </div>
-      </div> <!-- end of span8 -->
 
-      <div class="span2"></div> <!-- end of span2 -->
-    </div>
-    <footer class="navbar-fixed-bottom navbar-inner">
+          <!-- Ads start -->
+          <div class="span3 ads">
+            <h2>Ads</h2>
+            <div class="aboutus">
+              <h3 class="lead text-info"> About Us </h3>
+              <p> Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+              tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, </p> 
+              <h3 class="lead"> MyanAds Online </h3>
+            </div>
+            <div class="ads_item">
+              <img src="assets/img/myan.png" style="width:210px;">      
+            </div>
+            <div class="ads_item">
+              <img data-src="holder.js/210x160/industrial">
+            </div>
+            <div class="ads_item">
+              <img data-src="holder.js/210x160/industrial">
+            </div>
+            <div class="live">
+              <h3 class="lead"> Live Feed </h3>
+            </div>
+            <div class="ads_item">
+              <img data-src="holder.js/210x160/industrial">
+            </div> 
+          </div><!-- Ads End -->
+
+        </div>
+      </div>
+      <div class="span2"></div>
+    </div> <!-- main_layout end -->
+
+
+     <!-- Footer
+    ================================================== -->
+    <footer class="navbar-inner">
       <div class="container">
-      <p class="copyright">@2013 Zwenex</p>
-        <div class="btn-toolbar">
-  <div class="btn-group">
-    <a class="btn" href="http://www.facebook.com/thingyanyay2013" target="_blank"><img src="assets/img/facebook.png"></a>
-    <a class="btn" href="http://www.twitter.com/thingyanyay2013" target="_blank"><img src="assets/img/twitter.png"></a>
-    <a class="btn" href="mailto:tgy2013.zwenex@gmail.com?Subject=feedback"><img src="assets/img/email.png"></a>
-  </div>
-</div>
-    </div>
-    </footer>
+        <div class="row-fluid">
+          <div id="credits" class="span9">
+              <h4>
+                <a href="http://www.zwenex.com" title="Zwenex" target="_blank" class="lead">&copy; Zwenexsys Intl Ltd.</a>
+              </h4>
+          </div>
+          <div id="social" class="span3">
+              <a href="mailto:tgy2013.zwenex@gmail.com" title="Mail"><img src="assets/img/email.png" alt="E-Mail"></a>
+              &nbsp;&nbsp;
+              <a href="https://facebook.com/Thingyan2013" title="Facebook" target="_blank"><img src="assets/img/facebook.png" alt="Facebook"></a>
+              &nbsp;&nbsp;
+              <a href="https://twitter.com/Thingyan2013" title="Twitter" target="_blank"><img src="assets/img/twitter.png" alt="Twitter"></a>
+              &nbsp;&nbsp;
+          </div>
+        </div>
+      </div>
+    </footer><!-- Footer End -->
+      
 
   </body>
   <script type="text/javascript">
-$(document).ready(function() {
-    $('#example').dataTable( {
-        "sDom": "<'row'<'span6'l><'span6'f>r>t<'row'<'span6'i><'span6'p>>"
-    } );
-} );
 $(function() {
   $('.dynamo').dynamo();
 });
-$.extend( $.fn.dataTableExt.oStdClasses, {
-    "sWrapper": "dataTables_wrapper form-inline"
-} );
 </script>
 </html>
