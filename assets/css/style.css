@@ -1291,3 +1291,13 @@ html>body tbody.scrollContent td + td + td {
 #social a img:hover{
   box-shadow: 1px 5px 5px #777;
 }
+.facebook{
+  font-size: 1.3em;
+  font-weight: 900;
+  color: #3B5998!important;
+  background: url("../img/fb.ico") no-repeat right !important;
+}
+.facebook:hover{
+  background-color: #3B5998!important;
+  color:white!important;
+}
