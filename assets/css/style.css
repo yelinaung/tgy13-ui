@@ -51,6 +51,11 @@ hr {
   margin-top: 7%;
 }
 
+
+.detail_img img {
+  padding-left: 50px;
+}
+
 /* Sidebar
 -------------------------------------------------- */
 .aboutus {
