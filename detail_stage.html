@@ -1,71 +1,109 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>TGY13 | Stage Name</title>
+    <title>TGY13 | Stage Detail </title>
     <!-- Bootstrap -->
     <link href="assets/css/bootstrap2.css" rel="stylesheet" media="screen">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="assets/css/style.css" rel="stylesheet">
+    <link href="assets/css/bootstrap-responsive.css" rel="stylesheet">
     <link href="assets/css/jcontent.css" rel="stylesheet" media="screen">
+    <!-- <link href='http://fonts.googleapis.com/css?family=Oxygen:700' rel='stylesheet' type='text/css'> -->
     <script src="assets/js/holder.js"></script>
     <script src="assets/js/jquery.js"></script>
     <script src="assets/js/bootstrap.min.js"></script>
     <script src="assets/js/dynamo.js"></script>
     <script type="text/javascript" language="javascript" src="assets/js/jquery.jcontent.0.8.min.js"></script>
-    <link href="assets/css/jcontent.css" rel="stylesheet" media="screen">
     <!-- Navbar -->
   </head>
   <body  class="preview" id="top" data-spy="scroll" data-target=".subnav" data-offset="80">
     <div class="navbar navbar-fixed-top">
       <div class="navbar-inner">
-          <div class="container">
-            <a class="btn btn-navbar" data-toggle="collapse" data-target=".navbar-responsive-collapse">
-              <span class="icon-bar"></span>
-              <span class="icon-bar"></span>
-              <span class="icon-bar"></span>
-            </a>
-            <div class="nav-collapse collapse navbar-responsive-collapse">
-              <ul class="nav">
-                <li class="active"><a href="index.html">Home</a></li>
-                <li><a href="list_stage.html">Stage</a></li>
-                <li><a href="list_car.html">Car Rental</a></li>
-              </ul>
-              <ul class="nav pull-right">
-                <form class="form-search navbar-search pull-left">
-                  <div class="input-prepend">
-                    <a class="btn" href="#"><i class="icon-search"></i></a>
-                      <input type="text" class="span2 search-query" placeholder="Type your search">
-                  </div>
-                </form>
-                <li class="dropdown">
-                  <a href="#" class="dropdown-toggle" data-toggle="dropdown" class="btn-group">Post <b class="caret"></b></a>
-                    <ul class="dropdown-menu">
-                      <li><a href="#">Stage</a></li>
-                      <li><a href="#">Car</a></li>
+                <div class="container">
+                  <a class="btn btn-navbar" data-toggle="collapse" data-target=".navbar-responsive-collapse">
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                  </a>
+                  <div class="nav-collapse collapse navbar-responsive-collapse">
+                  <ul class="nav">
+                      <li><a href="index.html">Home</a></li>
+                      <li class="active"><a href="list_stage.html">Stage</a></li>
+                      <li><a href="list_car.html">Car Rental</a></li>
                     </ul>
-                </li>
-                <li class="divider-vertical"></li>
-                  <a href="#" id="login" class="btn btn-primary" data-toggle="dropdown">Log in</a>
-                  <ul class="dropdown-menu">
-                    <a ref="pop_up.html" onclick="return pop_up(this, 'Pop Up')"><img src="assets/img/login_fb.png" width="80px"></a>
-                  </ul>
-              </ul>
-            </div><!-- /.nav-collapse -->
-          </div>
-      </div><!-- /navbar-inner -->
+                    <ul class="nav pull-right">
+                    <form class="form-search navbar-search pull-left">
+                      <div class="input-prepend">
+                        <a class="btn" href="#"><i class="icon-search"></i></a>
+                        <input type="text" class="span2 search-query" placeholder="Type your search">
+                      </div>
+                    </form>
+                      <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">Post <b class="caret"></b></a>
+                        <ul class="dropdown-menu">
+                          <li><a href="#">Stage</a></li>
+                          <li><a href="#">Car</a></li>
+                        </ul>
+                      </li>
+                      <li class="divider-vertical"></li>
+                        <a href="#" class="btn btn-primary" id="login" data-toggle="dropdown">Log in</a>
+                        </ul>
+                      </li>
+                    </ul>
+                  </div><!-- /.nav-collapse -->
+                </div>
+              </div><!-- /navbar-inner -->
     </div>
 
     <!-- header -->
-    <header class="jumbotron subhead" id="overview">
-        <div id="logo" > TGY 13 </div>
-    </header>
+    <header class="jumbotron subhead">
+      <div class="container">
+        <div class="row-fluid">
+          <div id="logo" class="span7"><a href="#"> <img src="assets/img/logo.png" /></a></div>
+          <div id="bannerads" class="span5"><img data-src="holder.js/440x100/industrial"></div>
+        </div>
+      </div>
+    </header><!-- Header end -->
+    
+    <!-- main_layout start -->
     <div class="row-fluid">
       <div class="span2"></div>
-      <div class="span9 wrap">
+      <div class="span8 wrap">
         <div class="row-fluid">
+          <div class="span9">
+
+            <!-- 2 view start -->
+            <div class="row-fluid">
+              <!-- List start -->
+              <div class="span12">
+            <div class="row-fluid search_row">
+              <div class="span8">
+                <div class="span5 pull-left">
+                <ul class="breadcrumb">
+          <li><a href="#">Home</a> <span class="divider">/</span></li>
+          <li><a href="#">Stage</a> <span class="divider">/</span></li>
+          <li class="active">Car Name</li>
+        </ul>
+              </div> <!-- end of select -->
+
+              <div class=" pull-right">
+                <form class="form-search navbar-search pull-right">
+                  <div class="input-prepend">
+                    <a class="btn" href="#"><i class="icon-search"></i></a>
+                    <input type="text" class="span12 search-query" placeholder="Type your search" style="height:34px;">
+                  </div>
+                </form>
+              </div> <!-- end of search -->
+              </div>
+
+            </div> <!-- end of search row -->
+              <div>
+                <div class="">
+            <div class="span9">
+            <div class="row-fluid">
               <div class="span12">
                 <div class="detail_img">
-                  <img src="assets/img/logo3.png">
+                  <img src="assets/img/car.jpg" style="width:200px;">
                 </div>
               </div>
             </div>
@@ -93,60 +131,88 @@
             </div>
               </div>
             </div>
-          <br><br>
-          <!-- Ads SideBar Start-->
-          <div class="span3 ads">
-                <div class="aboutus">
-                    <h3 class="lead text-info"> About Us </h3>
-                    <p> Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-                    tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, </p> 
-                    <h3 class="lead"> MyanAds Online </h3>
-                </div>
-                <div class="ads">
-                    <img src="assets/img/myan.png">  <br><br><br>  
-                    <img data-src="holder.js/210x160/industrial"> <br><br>
-                    <img data-src="holder.js/210x160/industrial">      
-                </div>   <br>   
-                <div class="live">
-                    <h3 class="lead"> Live Feed </h3>
-                </div></br>
-                <div class="ads">
-                    <img data-src="holder.js/210x160/industrial">      
-                </div> 
           </div>
+
+                </div>
+            </div> <!-- end of taable row -->
+            <div class="row-fluid span8">
+
+
+      
+            </div> <!-- end of pagination row -->
+          </div> <!-- end of span9 -->
+          <!-- List End -->
+        </div><!-- 2 views End -->
+
+            
+
+            <div class="row-fluid">
+              <div class="span12"><center>
+                <img data-src="holder.js/800x150/industrial"></center>
+              </div>
+            </div><br><br>
+
+          </div>
+
+          <!-- Ads start -->
+          <div class="span3 ads">
+            <h2>Ads</h2>
+            <div class="aboutus">
+              <h3 class="lead text-info"> About Us </h3>
+              <p> Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+              tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, </p> 
+              <h3 class="lead"> MyanAds Online </h3>
+            </div>
+            <div class="ads_item">
+              <img src="assets/img/myan.png" style="width:210px;">      
+            </div>
+            <div class="ads_item">
+              <img data-src="holder.js/210x160/industrial">
+            </div>
+            <div class="ads_item">
+              <img data-src="holder.js/210x160/industrial">
+            </div>
+            <div class="live">
+              <h3 class="lead"> Live Feed </h3>
+            </div>
+            <div class="ads_item">
+              <img data-src="holder.js/210x160/industrial">
+            </div> 
+          </div><!-- Ads End -->
+
         </div>
-          <!-- Ads SideBar End-->  
-      <br><br>
-     <hr style="height:2px;" class="bs-docs-separator">
-        <div class="container">
-          <div id="credits" class="span8">
-            <h4>
-              <a href="http://www.zwenex.com" title="Zwenex" target="_blank" class="lead">© Zwenexsys Intl Ltd.</a>
-            </h4>
+      </div>
+      <div class="span2"></div>
+    </div> <!-- main_layout end -->
+
+
+     <!-- Footer
+    ================================================== -->
+    <footer class="navbar-inner">
+      <div class="container">
+        <div class="row-fluid">
+          <div id="credits" class="span9">
+              <h4>
+                <a href="http://www.zwenex.com" title="Zwenex" target="_blank" class="lead">&copy; Zwenexsys Intl Ltd.</a>
+              </h4>
           </div>
           <div id="social" class="span3">
-            <a href="mailto:tgy2013.zwenex@gmail.com" title="Mail"><img src="assets/img/email.png" alt="E-Mail"></a>
-            &nbsp;&nbsp;
-            <a href="https://facebook.com/Thingyan2013" title="Facebook" target="_blank"><img src="assets/img/facebook.png" alt="Facebook"></a>
-            &nbsp;&nbsp;
-            <a href="https://twitter.com/Thingyan2013" title="Twitter" target="_blank"><img src="assets/img/twitter.png" alt="Twitter"></a>
-            &nbsp;&nbsp;
-            </div>
-         </div>
-      <!-- Footer End -->           
+              <a href="mailto:tgy2013.zwenex@gmail.com" title="Mail"><img src="assets/img/email.png" alt="E-Mail"></a>
+              &nbsp;&nbsp;
+              <a href="https://facebook.com/Thingyan2013" title="Facebook" target="_blank"><img src="assets/img/facebook.png" alt="Facebook"></a>
+              &nbsp;&nbsp;
+              <a href="https://twitter.com/Thingyan2013" title="Twitter" target="_blank"><img src="assets/img/twitter.png" alt="Twitter"></a>
+              &nbsp;&nbsp;
+          </div>
+        </div>
+      </div>
+    </footer><!-- Footer End -->
+      
 
   </body>
   <script type="text/javascript">
-$(document).ready(function() {
-    $('#example').dataTable( {
-        "sDom": "<'row'<'span6'l><'span6'f>r>t<'row'<'span6'i><'span6'p>>"
-    } );
-} );
 $(function() {
   $('.dynamo').dynamo();
 });
-$.extend( $.fn.dataTableExt.oStdClasses, {
-    "sWrapper": "dataTables_wrapper form-inline"
-} );
 </script>
 </html>
