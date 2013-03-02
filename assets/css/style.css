@@ -23,10 +23,10 @@ h3 code {
 }
 
 #logo {
-  padding-top: 9%;
-  float: left;
-  font-size: 100px;
   font-family: 'Oxygen', sans-serif;
+  float: left;
+  margin-left: -100px;
+  margin-top: -10px;
 }
 
 .form-search {

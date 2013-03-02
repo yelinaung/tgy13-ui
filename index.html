@@ -19,54 +19,55 @@
   <body  class="preview" id="top" data-spy="scroll" data-target=".subnav" data-offset="80">
     <div class="navbar navbar-fixed-top">
       <div class="navbar-inner">
-                <div class="container">
-                  <a class="btn btn-navbar" data-toggle="collapse" data-target=".navbar-responsive-collapse">
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                  </a>
-                  <div class="nav-collapse collapse navbar-responsive-collapse">
-                  <ul class="nav">
-                      <li class="active"><a href="index.html">Home</a></li>
-                      <li><a href="list_stage.html">Stage</a></li>
-                      <li><a href="list_car.html">Car Rental</a></li>
+          <div class="container">
+            <a class="btn btn-navbar" data-toggle="collapse" data-target=".navbar-responsive-collapse">
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+            </a>
+            <div class="nav-collapse collapse navbar-responsive-collapse">
+              <ul class="nav">
+                  <li class="active"><a href="index.html">Home</a></li>
+                  <li><a href="list_stage.html">Stage</a></li>
+                  <li><a href="list_car.html">Car Rental</a></li>
+              </ul>
+              <ul class="nav pull-right">
+                <form class="form-search navbar-search pull-left">
+                  <div class="input-prepend">
+                    <a class="btn" href="#"><i class="icon-search"></i></a>
+                      <input type="text" class="span2 search-query" placeholder="Type your search">
+                  </div>
+                </form>
+                <li class="dropdown">
+                  <a href="#" class="dropdown-toggle" data-toggle="dropdown">Post <b class="caret"></b></a>
+                    <ul class="dropdown-menu">
+                      <li><a href="#">Stage</a></li>
+                      <li><a href="#">Car</a></li>
                     </ul>
-                    <ul class="nav pull-right">
-                    <form class="form-search navbar-search pull-left">
-                      <div class="input-prepend">
-                        <a class="btn" href="#"><i class="icon-search"></i></a>
-                        <input type="text" class="span2 search-query" placeholder="Type your search">
-                      </div>
-                    </form>
-                      <li class="dropdown">
-                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">Post <b class="caret"></b></a>
-                        <ul class="dropdown-menu">
-                          <li><a href="#">Stage</a></li>
-                          <li><a href="#">Car</a></li>
-                        </ul>
-                      </li>
-                      <li class="divider-vertical"></li>
-                      <li class="dropdown">
-                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">Log in</a>
-                        <ul class="dropdown-menu">
-                          <li><a href="" ref="pop_up.html" onclick="return pop_up(this, 'Pop Up')" class="facebook">facebook</a></li>
-                        </ul>
-                      </li>
-                    </ul>
-                  </div><!-- /.nav-collapse -->
-                </div>
-              </div><!-- /navbar-inner -->
+                </li>
+                <li class="divider-vertical"></li>
+                  <li class="dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">Log in</a>
+                      <ul class="dropdown-menu">
+                        <li><a href="" ref="pop_up.html" onclick="return pop_up(this, 'Pop Up')" class="facebook">facebook</a></li>
+                      </ul>
+                  </li>
+              </ul>
+            </div><!-- /.nav-collapse -->
+          </div>
+      </div><!-- /navbar-inner -->
     </div>
 
     <!-- header -->
     <header class="jumbotron subhead">
       <div class="container">
         <div class="row-fluid">
-          <div id="logo" class="span7"> TGY 13 </div>
+          <div id="logo" class="span7"><a href="#"> <img src="assets/img/logo.png" /></a></div>
           <div id="bannerads" class="span5"><img data-src="holder.js/440x100/industrial"></div>
         </div>
       </div>
-    </header><!-- Header end -->
+    </header>
+    <!-- header end -->
     
     <!-- main_layout start -->
     <div class="row-fluid">
@@ -296,8 +297,7 @@
     </div> <!-- main_layout end -->
 
 
-     <!-- Footer
-    ================================================== -->
+     <!-- Footer -->
     <footer class="navbar-inner">
       <div class="container">
         <div class="row-fluid">
@@ -316,7 +316,8 @@
           </div>
         </div>
       </div>
-    </footer><!-- Footer End -->
+    </footer>
+    <!-- Footer End -->
       
 
   </body>
