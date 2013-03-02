@@ -4558,9 +4558,9 @@ input[type="submit"].btn.btn-mini {
 }
 
 .navbar .nav > li > a:focus,
-.navbar .nav > li > a:hover {
+ {
   color: #fff;
-  background: #8ead13;
+ /* background: #8ead13;*/
   text-decoration: none;
 }
 
