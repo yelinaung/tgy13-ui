@@ -244,9 +244,6 @@ a:hover {
   -webkit-border-radius: 6px;
      -moz-border-radius: 6px;
           border-radius: 6px;
-          -webkit-transition: all 0.5s ease-in;
-          -moz-transition: all 0.5s ease-in;
-          -o-transition: all 0.5s ease-in;
 }
 
 .img-polaroid {
@@ -261,11 +258,6 @@ a:hover {
 
 .img-circle {
   -webkit-border-radius: 500px;
-     -moz-border-radius: 500px;
-          border-radius: 500px;
-}
-.img-rounded:hover{
-    -webkit-border-radius: 500px;
      -moz-border-radius: 500px;
           border-radius: 500px;
 }
