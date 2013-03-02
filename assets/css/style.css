@@ -35,6 +35,8 @@ h3 code {
 
 #login {
   text-decoration: none;
+  text-shadow:none;
+  background-color: #77ad64;
 }
 
 hr {
